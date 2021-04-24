@@ -19,6 +19,21 @@ public class ShoppingCartTest {
         //Assert
         assertTrue(shoppingCart.isEmpty());
         //Teardown
+    }
+
+    @Test
+    void testAddItem(){
+        ShoppingCart shoppingCart;
+        shoppingCart = new ShoppingCart();
+        double expected = 1;
+        assertEquals(expected, shoppingCart.addItem(1));
+    }
+    @Test
+    void testAddMultipleItem(){
+        ShoppingCart shoppingCart;
+        shoppingCart = new ShoppingCart();
+        double expected = 6;
+        assertEquals(expected,shoppingCart.addItem(1,2,3));
 
     }
 
