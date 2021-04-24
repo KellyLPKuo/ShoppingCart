@@ -1,10 +1,12 @@
 package com.cognizant;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ShoppingCart {
     private boolean emptyFlag = true;
+
     public ShoppingCart(){
 
     }
@@ -31,8 +33,8 @@ public class ShoppingCart {
 
     }
 
-//    public Map<Integer, Double> addListItems() {
-////        Map<Integer,Double> map = new HashMap<>();
-////        map.put()
-//    }
+   public void  addListItems(Item item) {
+     Item itm = new Item(item.getName(),item.getPrice(), item.getQuantity());
+
+    }
 }
